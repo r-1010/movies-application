@@ -2,7 +2,7 @@ import React from "react";
 
 const setVoteColor = (vote) => {
     if (vote >= 8) {
-        return "darkgreen"
+        return "green"
     } else if (vote >= 6) {
         return "orange"
     } else {
