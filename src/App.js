@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div>
-      {/* <header>
+      <header>
         <form onSubmit={handleSubmit}>
           <input 
             className="search" 
@@ -47,7 +47,7 @@ function App() {
             onChange={handleChange}
           />
         </form>
-      </header> */}
+      </header>
       <div className="movie-container">
         {movies.length > 0 && movies.map(movie => (
           <Movie key={movie.id} {...movie} />
