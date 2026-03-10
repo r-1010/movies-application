@@ -37,17 +37,17 @@ function App() {
 
   return (
     <div>
-      <header>
-          <form onSubmit={handleSubmit}>
-            <input 
-              className="search" 
-              type="search" 
-              placeholder="Search..." 
-              value={searchTerm}
-              onChange={handleChange}
-            />
-          </form>
-        </header>
+      {/* <header>
+        <form onSubmit={handleSubmit}>
+          <input 
+            className="search" 
+            type="search" 
+            placeholder="Search..." 
+            value={searchTerm}
+            onChange={handleChange}
+          />
+        </form>
+      </header> */}
       <div className="movie-container">
         {movies.length > 0 && movies.map(movie => (
           <Movie key={movie.id} {...movie} />
